@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Contact-us</title>
+</head>
+<body>
+      <!-- --------------navbar--------------- -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">RebuiltX</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- ---------------navbarend----------------- -->
+  <!-- ------------------CONTACTUS-FIRST-PAGE--------- -->
+  <div class="contact-first-page">
+    <div class="login-box">
+      <h2>Contact-Us</h2>
+      <form onsubmit="sendEmail(); reset(); return false; ">
+        <div class="user-box">
+          <input type="text" name="" required="" id="name">
+          <label>Name</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="" id="phone-no">
+          <label>Phone No.</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="" id="email">
+          <label>Email</label>
+        </div>
+
+        <button class="submit-btn" type="submit"> Submit</button>
+      </form>
+      <!-- <div class="icons"> <a href=""><img src="images/i1.png" alt=""></a>
+        <a href=""><img src="images/i2.png" alt=""></a>
+        <a href=""><img src="images/i3.png" alt=""></a>
+      </div> -->
+    </div>
+    <div class="contact-image">
+      <img src="images/contact -us.png" alt="">
+    </div>
+   
+  </div>
+   <!-- ////////////////// -->
+   <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="index.html">Home</a>
+
+     
+
+        <a href="aboutus.html">About</a>
+
+        <a href="services.html">Services</a>
+
+
+        <a href="contactus.html">Contact</a>
+      </p>
+
+      <p>RebuiltX &copy; 2022</p>
+    </div>
+
+  </footer>
+  <!-- ---------------------javascript------------------ -->
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+</body>
+</html>

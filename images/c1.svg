@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 500" style="enable-background:new 0 0 750 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:url(#SVGID_3_);}
+	.st2{fill:url(#SVGID_4_);}
+</style>
+<g id="BACKGROUND">
+</g>
+<g id="OBJECTS">
+	<g>
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M750,67.27v425.58c0,3.94-3.07,7.15-6.87,7.15H6.87c-3.8,0-6.87-3.2-6.87-7.15V67.27
+					c0-3.94,3.07-7.15,6.87-7.15h736.27C746.93,60.13,750,63.33,750,67.27z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st0">
+				<g>
+					<g>
+						<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-13.2282" y1="339.2946" x2="761.9727" y2="339.2946">
+							<stop  offset="0" style="stop-color:#9CF1FF"/>
+							<stop  offset="0.9991" style="stop-color:#BFC1FF"/>
+						</linearGradient>
+						<path class="st1" d="M761,360.76c-55.12,47.12-124.76,78.41-196.07,76.9s-143.3-39.1-178.97-103.4
+							c-13.5-24.33-21.61-51.54-34.62-76.17c-18.87-35.72-51.35-61.78-92.23-54.41c-54.92,9.9-116.73,56.7-157.39-8.29
+							c-12.92-20.65-34.48-29.6-57.48-30.25c-9.26-0.26-57.48,1.25-57.48,16.34c0,0.01,0,332.01,0,332.01h775.2L761,360.76z"/>
+					</g>
+					<g>
+						<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="360.4096" y1="210.2327" x2="378.0773" y2="524.7171">
+							<stop  offset="0" style="stop-color:#FFFFFF"/>
+							<stop  offset="0.9991" style="stop-color:#969696"/>
+						</linearGradient>
+						<path class="st2" d="M761,373.77c-55.12,47.12-124.76,78.41-196.07,76.9s-143.3-39.1-178.97-103.4
+							c-13.5-24.33-21.61-51.54-34.62-76.17c-18.87-35.72-51.35-61.78-92.23-54.41c-54.92,9.9-116.73,56.7-157.39-8.29
+							c-12.92-20.65-34.48-29.6-57.48-30.25c-9.26-0.26-57.48,1.25-57.48,16.34c0,0.01,0,332.01,0,332.01h775.2L761,373.77z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="DESIGNED_BY_FREEPIK">
+</g>
+</svg>

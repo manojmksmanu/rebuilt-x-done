@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>About-Us</title>
+</head>
+<body>
+      <!-- --------------navbar--------------- -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">RebuiltX</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- ---------------navbarend----------------- -->
+    
+      <!-- ///////////////////////about ///////////////////////// -->
+      <div class="ab">
+      <div id="about">
+        <div class="left">
+          <h1>About-us</h1>
+          <p>Rebuilt X, a company that has the solution to every software problem. Here you can start your digital journey
+            with us. We have the complete solution for your digital platform. We deal with developing websites,
+            cross-platform applications, social media handles, graphical objects(logo, posts, etc), web apps, database
+            structuring and more. We are capable of providing a digital solution for small as well as large scale
+            businesses. </p>
+          <br>
+    
+    
+        </div>
+        <div class="right">
+          <img src="images/p1.png" alt="">
+          <!-- <img src="images/4.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+    
+      <div id="about">
+        <div class="left">
+          <h1>About-us</h1>
+          <p>Rebuilt X, a company that has the solution to every software problem. Here you can start your digital journey
+            with us. We have the complete solution for your digital platform. We deal with developing websites,
+            cross-platform applications, social media handles, graphical objects(logo, posts, etc), web apps, database
+            structuring and more. We are capable of providing a digital solution for small as well as large scale
+            businesses. </p>
+          <br>
+    
+    
+        </div>
+        <div class="right">
+            <img src="images/p1.png" alt="">
+            <!-- <img src="images/4.png" alt=""> -->
+          </div>
+          </div>
+      <div id="about">
+        <div class="left">
+          <h1>About-us</h1>
+          <p>Rebuilt X, a company that has the solution to every software problem. Here you can start your digital journey
+            with us. We have the complete solution for your digital platform. We deal with developing websites,
+            cross-platform applications, social media handles, graphical objects(logo, posts, etc), web apps, database
+            structuring and more. We are capable of providing a digital solution for small as well as large scale
+            businesses. </p>
+          <br>
+    
+    
+        </div>
+        <div class="right">
+            <img src="images/p1.png" alt="">
+            <!-- <img src="images/4.png" alt=""> -->
+          </div>
+          </div>
+
+           <!-- ////////////////// -->
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="index.html">Home</a>
+
+     
+
+        <a href="aboutus.html">About</a>
+
+        <a href="services.html">Services</a>
+
+
+        <a href="contactus.html">Contact</a>
+      </p>
+
+      <p>RebuiltX &copy; 2022</p>
+    </div>
+
+  </footer>
+            <!-- ---------------------javascript------------------ -->
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
