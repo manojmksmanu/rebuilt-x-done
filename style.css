@@ -59,6 +59,9 @@ body {}
   align-items: center;
   justify-content: space-between;
 }
+i img{
+  filter: invert(100%);
+  }
 
 .navbar.sticky .icon {
   color: #888;
@@ -70,23 +73,25 @@ body {}
   font-weight: 600;
   text-decoration: none;
 }
-
+/* .navbar .sticky .icon menu-btn{
+filter: invert(100%);
+} */
 .navbar.sticky .logo a {
-  color: #888;
-}
-
+  color: #888}
+  .navbar.sticky i .openio{
+    padding-top:10px ;
+filter: invert(20%);
+  } 
+ 
 .navbar.sticky ul li a {
   color: #888;
 }
-
 .navbar .menu-list {
   display: inline-flex;
 }
-
 .menu-list li {
   list-style: none;
 }
-
 .menu-list li a {
   color: #fff;
   font-size: 18px;
@@ -94,25 +99,30 @@ body {}
   margin-left: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
-
 }
-
 .menu-list li a:hover {
   color: #007bff;
 }
-
-.icon {
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-
-}
-
 .menu-list .cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
+}
+#closeio{
+  width: 25px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 0px;
+
+}
+.icon{
+  display: none;
+}
+
+@media screen and (max-width:868px) {
+  .icon{
+    display: block;
+  }
 }
 
 @media (max-width: 1230px) {
@@ -146,8 +156,7 @@ body {}
     display: block;
     z-index: 100;
   }
-
-  .icon.hide {
+.icon.hide {
     display: none;
   }
 
