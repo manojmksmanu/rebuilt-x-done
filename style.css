@@ -32,6 +32,9 @@ body {
   /* background: url(images/fullback.png); */
 }
 
+.anchor{
+  text-decoration: none;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
