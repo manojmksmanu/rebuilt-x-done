@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +23,7 @@
       </div>
       <ul class="menu-list">
         <div class="icon cancel-btn">
-          <i > <img src="images/icon-close.png" alt="" id="closeio"> </i>
+          <i> <img src="images/icon-close.png" alt="" id="closeio"> </i>
         </div>
         <li><a href="/">Home</a></li>
         <li><a href="aboutus.html">About</a></li>
@@ -32,7 +32,7 @@
         <li><a href="blogs.html">Blogs</a></li>
       </ul>
       <div class="icon menu-btn">
-        <i ><img src="images/icopen.png" alt="" class="openio"> </i>
+        <i><img src="images/icopen.png" alt="" class="openio"> </i>
       </div>
     </div>
   </nav>
@@ -51,12 +51,10 @@
       </h1>
 
     </div>
-   <a class="anchor" href="services.html"><button>
-    <span>Explore</span>
-    <div class="liquid"></div>
-  </button></a> 
-
-
+    <a class="anchor" href="services.html"><button>
+        <span>Explore</span>
+        <div class="liquid"></div>
+      </button></a>
 
     <video autoplay loop class="vg" muted plays-inline>
 
@@ -64,25 +62,20 @@
     </video>
   </div>
 
-
-
-
-
   <!-- ----------------firstpageend-------------------- -->
   <!-- --------------------about------------------- -->
   <!-- ///////////////////////about ///////////////////////// -->
   <div id="about" class="about-first-page">
     <div class="left">
       <h1>About-us</h1>
-      <p class="para">If you have any kind of business? In this digital world you need to start any kind of business on the internet. Don't worry, we are here to do it possible for you in the best way at low cost. We build connections with the clients and this strong bond gets results higher for both of us. 
+      <p class="para">If you have any kind of business? In this digital world you need to start any kind of business on
+        the internet. Don't worry, we are here to do it possible for you in the best way at low cost. We build
+        connections with the clients and this strong bond gets results higher for both of us.
       </p>
       <br>
-
-
     </div>
     <div class="right">
       <img src="images/p1.png" alt="">
-      <!-- <img src="images/4.png" alt=""> -->
     </div>
   </div>
   <!-- -----------------------aboutend--------------------- -->
@@ -98,28 +91,28 @@
   <div class="contact-first-page">
     <div class="login-box">
       <h2>Contact-Us</h2>
-      <form onsubmit="sendEmail(); reset(); return false; ">
+      <form action="/" onsubmit="sendEmail(); reset(); return false; ">
         <div class="user-box">
-          <input type="text" name="" required="" id="name">
+          <input type="text" name="" required id="name">
           <label>Name</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="" id="phone-no">
+          <input type="text" name="" required id="phone">
           <label>Phone No.</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="" id="email">
+          <input type="text" name="" required id="email">
           <label>Email</label>
         </div>
 
         <button class="submit-btn" type="submit"> Submit</button>
       </form>
-    
+
     </div>
     <div class="contact-image">
       <img src="images/contact -us.png" alt="">
     </div>
-   
+
   </div>
 
   <!-- ////////////////// -->
@@ -127,10 +120,14 @@
 
     <div class="footer-right">
 
-      <a href="https://www.facebook.com/Rebuilt-X-104529018837551"><i class="social-media-icons"><img src="images/fb.png" alt=""></i></a>
-      <a href="https://www.instagram.com/rebuiltx_it/"><i class="social-media-icons"><img src="images/insta.png" alt=""></i></a>
-      <a href="https://in.pinterest.com/rebuiltx/_created/"><i class="social-media-icons"><img src="images/pinterest.png" alt=""></i></a>
-      <a href="https://www.linkedin.com/company/rebuiltx/"><i class="social-media-icons"><img src="images/linkedln.png" alt=""></i></a>
+      <a href="https://www.facebook.com/Rebuilt-X-104529018837551"><i class="social-media-icons"><img
+            src="images/fb.png" alt=""></i></a>
+      <a href="https://www.instagram.com/rebuiltx_it/"><i class="social-media-icons"><img src="images/insta.png"
+            alt=""></i></a>
+      <a href="https://in.pinterest.com/rebuiltx/_created/"><i class="social-media-icons"><img
+            src="images/pinterest.png" alt=""></i></a>
+      <a href="https://www.linkedin.com/company/rebuiltx/"><i class="social-media-icons"><img src="images/linkedln.png"
+            alt=""></i></a>
 
     </div>
 
@@ -139,7 +136,7 @@
       <p class="footer-links">
         <a class="link-1" href="#">Home</a>
 
-     
+
 
         <a href="#">About</a>
 
@@ -155,6 +152,35 @@
   </footer>
 
   <!-- ---------------------javascript------------------ -->
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- the below javascript is for smtp-->
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      const members = ["hellofake2345@gmail.com", "manoj2022019@gmail.com"];
+      for (insane = 0; insane < members.length; insane++) {
+
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "bgmi.gift.official@gmail.com",
+          Password: "xpvrkavaxrkovvst",
+          To: members[insane],
+          From: document.getElementById("email").value,
+          Subject: "Website contact form",
+          Body: "A person is want to contact you. The details are below:<br>Name: " + document.getElementById("name").value + "<br>Email: " + document.getElementById("email").value + "<br>Phone no.: " + document.getElementById("phone").value
+        });
+        // .then(
+        //   message => alert("Submitted")
+        // );
+      }
+      alert("Your response has been submitted successfully");
+    }
+  </script>
+  <!-- SMPTP ends-->
   <script>
     const body = document.querySelector("body");
     const navbar = document.querySelector(".navbar");
