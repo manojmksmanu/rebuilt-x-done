@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Contact-us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Contact-us</title>
 </head>
+
 <body>
-       <!-- --------------navbar--------------- -->
+  <!-- --------------navbar--------------- -->
 
   <nav class="navbar">
     <div class="content">
@@ -18,7 +20,7 @@
       </div>
       <ul class="menu-list">
         <div class="icon cancel-btn">
-          <i > <img src="images/icon-close.png" alt="" id="closeio">  </i>
+          <i> <img src="images/icon-close.png" alt="" id="closeio"> </i>
         </div>
         <li><a href="/">Home</a></li>
         <li><a href="aboutus.html">About</a></li>
@@ -27,7 +29,7 @@
         <li><a href="blogs.html">Blogs</a></li>
       </ul>
       <div class="icon menu-btn">
-        <i ><img src="images/icopen.png" alt="" class="openio"> </i>
+        <i><img src="images/icopen.png" alt="" class="openio"> </i>
       </div>
     </div>
   </nav>
@@ -38,15 +40,15 @@
       <h2>Contact-Us</h2>
       <form onsubmit="sendEmail(); reset(); return false; ">
         <div class="user-box">
-          <input type="text" name="" required="" id="name">
+          <input type="text" name="" required id="name">
           <label>Name</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="" id="phone-no">
+          <input type="text" name="" required id="phone">
           <label>Phone No.</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="" id="email">
+          <input type="text" name="" required id="email">
           <label>Email</label>
         </div>
 
@@ -60,17 +62,21 @@
     <div class="contact-image">
       <img src="images/contact -us.png" alt="">
     </div>
-   
+
   </div>
-           <!-- ////////////////// -->
+  <!-- ////////////////// -->
   <footer class="footer-distributed">
 
     <div class="footer-right">
 
-      <a href="https://www.facebook.com/Rebuilt-X-104529018837551"><i class="social-media-icons"><img src="images/fb.png" alt=""></i></a>
-      <a href="https://www.instagram.com/rebuiltx_it/"><i class="social-media-icons"><img src="images/insta.png" alt=""></i></a>
-      <a href="https://in.pinterest.com/rebuiltx/_created/"><i class="social-media-icons"><img src="images/pinterest.png" alt=""></i></a>
-      <a href="https://www.linkedin.com/company/rebuiltx/"><i class="social-media-icons"><img src="images/linkedln.png" alt=""></i></a>
+      <a href="https://www.facebook.com/Rebuilt-X-104529018837551"><i class="social-media-icons"><img
+            src="images/fb.png" alt=""></i></a>
+      <a href="https://www.instagram.com/rebuiltx_it/"><i class="social-media-icons"><img src="images/insta.png"
+            alt=""></i></a>
+      <a href="https://in.pinterest.com/rebuiltx/_created/"><i class="social-media-icons"><img
+            src="images/pinterest.png" alt=""></i></a>
+      <a href="https://www.linkedin.com/company/rebuiltx/"><i class="social-media-icons"><img src="images/linkedln.png"
+            alt=""></i></a>
 
     </div>
 
@@ -79,7 +85,7 @@
       <p class="footer-links">
         <a class="link-1" href="index.html">Home</a>
 
-     
+
 
         <a href="aboutus.html">About</a>
 
@@ -94,25 +100,51 @@
 
   </footer>
   <!-- ---------------------javascript------------------ -->
-<script>
+  <!-- the below javascript is for smtp-->
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      const members = ["hellofake2345@gmail.com", "manoj2022019@gmail.com"];
+      for (insane = 0; insane < members.length; insane++) {
+
+        Email.send({
+          SecureToken: "2c29a400-15eb-4d06-8689-61070e9c6f57",
+          To: members[insane],
+          From: document.getElementById("email").value,
+          Subject: "Website contact form",
+          Body: "A person is want to contact you. The details are below:<br>Name: " + document.getElementById("name").value + "<br>Email: " + document.getElementById("email").value + "<br>Phone no.: " + document.getElementById("phone").value
+        });
+        // .then(
+        //   message => alert("Submitted")
+        // );
+      }
+      alert("Your response has been submitted successfully");
+    }
+  </script>
+  <!-- SMPTP ends-->
+
+  <script>
     const body = document.querySelector("body");
     const navbar = document.querySelector(".navbar");
     const menuBtn = document.querySelector(".menu-btn");
     const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
+    menuBtn.onclick = () => {
       navbar.classList.add("show");
       menuBtn.classList.add("hide");
       body.classList.add("disabled");
     }
-    cancelBtn.onclick = ()=>{
+    cancelBtn.onclick = () => {
       body.classList.remove("disabled");
       navbar.classList.remove("show");
       menuBtn.classList.remove("hide");
     }
-    window.onscroll = ()=>{
+    window.onscroll = () => {
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
   </script>
-    
+
 </body>
+
 </html>
